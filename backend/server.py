@@ -1,12 +1,15 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 
 
 app = Flask(__name__)
 
 
-@app.route("/meow")
+@app.route("/meow", methods=['POST'])
 def meow():
-    # call to the function from the main.py
+    data = request.get_json()
+    # Data pre-process if needed
+    # call to the function from the main.py and pass parameters if needed
+    # return the output of the function as a response to the frontend
     pass
 
 
