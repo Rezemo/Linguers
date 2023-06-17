@@ -1,0 +1,2 @@
+Delete me when you put any frontend files
+if the frontend folder is empty it won't be pushed to github
